@@ -1,0 +1,5604 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZZJCore</name>
+    </assembly>
+    <members>
+        <member name="T:ZZJCore.YYSelect">
+            <summary>
+            预约选择表格
+            </summary>
+        </member>
+        <member name="M:ZZJCore.YYSelect.ShowForm(ZZJCore.YYSelect.YYSelectParameter,System.Int32@,System.Int32@)">
+            <summary>
+            显示预约选择表格
+            </summary>
+            <param name="YYP"></param>
+            <param name="Line"></param>
+            <param name="Index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.YYSelect.ShowForm(System.String,ZZJCore.ZZJStruct.YYDoct[],System.Int32@,System.Int32@,System.Int32)">
+            <summary>
+            显示一次预约选择表格界面
+            </summary>
+            <param name="Caption"></param>
+            <param name="DC"></param>
+            <param name="Line"></param>
+            <param name="Index"></param>
+            <param name="DefPage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.YYSelect.ShowForm(System.String,ZZJCore.ZZJStruct.YYDoctEx[],System.Int32@,System.Int32@,System.Int32)">
+            <summary>
+            显示一次预约选择表格界面
+            </summary>
+            <param name="Caption">标题</param>
+            <param name="DC">数据列表</param>
+            <param name="Line">选择的行</param>
+            <param name="Index">选择的医生</param>
+            <param name="DefPage">默认显示哪一页</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.YYSelect.YYSelectParameter">
+            <summary>
+            参数配置
+            </summary>
+        </member>
+        <member name="T:ZZJCore.PageForm.PageFormParameter">
+            <summary>
+            参数配置
+            </summary>
+        </member>
+        <member name="T:ZZJCore.PageForm">
+            <summary>
+            支持翻页的选择界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.PageForm.NewTYForm(ZZJCore.PageForm.PageFormParameter)">
+            <summary>
+            实例化一个界面
+            </summary>
+            <param name="PFP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.PageForm.PageFormParameter">
+            <summary>
+            参数配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.PageFormControlArray">
+            <summary>
+            页面控件数组(在部分界面中,由内部赋值)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.Head">
+            <summary>
+            头部标签控件
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.DefPage">
+            <summary>
+            默认显示的页码
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.ContentAlignment">
+            <summary>
+            内容对齐方式
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.EndLineAlignment">
+            <summary>
+            尾行对齐方式
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.VDistance">
+            <summary>
+            垂直间距
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PageForm.PageFormParameter.HDistance">
+            <summary>
+            水平间距
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YYSelect.YYSelectParameter.DC">
+            <summary>
+            医生数据
+            </summary>
+        </member>
+        <member name="T:ZZJCore.xjycProcessCls">
+            <summary>
+            现金充值 过程类
+            </summary>
+        </member>
+        <member name="P:ZZJCore.xjycProcessCls.CGBZ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZZJCore.xjycProcessCls.YCMS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.YYTable">
+            <summary>
+            单个预约表格
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.#ctor">
+            <summary>
+            构建
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.ShowTable(ZZJCore.ZZJStruct.YYDoct)">
+            <summary>
+            显示
+            </summary>
+            <param name="DC"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.EventAdd">
+            <summary>
+            事件添加
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.pictureBox1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            刷新界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.SelectYS(System.Object,System.EventArgs)">
+            <summary>
+            选中
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ZZJCore.SubWindow.YYTable.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTable.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.YYTable.OKClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.YYTable.OK_Click">
+            <summary>
+            
+            </summary>
+            <param name="oControl"></param>
+            <param name="Line"></param>
+            <param name="Index"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.NumberPad">
+            <summary>
+            数字键盘
+            </summary>
+            <summary>
+            数字输入
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Del">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt0">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt9">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt8">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt7">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt6">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.Butt1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.Finalize">
+            <summary>
+            释放界面时
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.Initial">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.NumberPad_Close(System.Object,System.EventArgs)">
+            <summary>
+            关闭事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.GetButt(System.Int32)">
+            <summary>
+            根据intID获取按钮实例
+            </summary>
+            <param name="T"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SubWindow.NumberPad.GetButt(System.String)">
+            <summary>
+            根据StringID获取按钮实例
+            </summary>
+            <param name="T"></param>
+            <returns></returns>
+        </member>
+        <member name="E:ZZJCore.SubWindow.NumberPad.NumBerClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.NumberPad.OtherBtnClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.NumberPad.OtherBtnID">
+            <summary>
+            其它按钮ID
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.OtherBtnID.Delect">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.OtherBtnID.OK">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.OtherBtnID.Clear">
+            <summary>
+            清除
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.NumberPad.OtherBtnID.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.NumberPad.NumBtn">
+            <summary>
+            数字按钮
+            </summary>
+            <param name="Value"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.NumberPad.OtherBtn">
+            <summary>
+            其他按钮
+            </summary>
+            <param name="KeyID">删除按钮=-1 清空按钮=-2(这个暂时没有) 取消按钮-3 确认按钮=0</param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.Code128">
+            <summary>
+            功能：一维条形码
+            说明：采用Code128编码，BarCode128有三种不同的版本：A（数字、大写字母、控制字符）B（数字、大小字母、字符）C（双位数字）
+            创建人：
+            创建时间:2014年4月23日
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetCodeImage(System.String,ZZJCore.SuanFa.Code128.Encode)">
+            <summary>
+            获取128图形
+            </summary>
+            <param name="pText">文字</param>
+            <param name="pCode">编码</param>      
+            <returns>图形</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.SaveImage(System.String,ZZJCore.SuanFa.Code128.Encode,System.String,System.Drawing.Font,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            保存条形码到指定的路径
+            </summary>
+            <param name="pText">待转换的条码</param>
+            <param name="pCode">编译类型</param>
+            <param name="path">条码保存路径</param>
+            <param name="font">字体,默认20号宋体</param>
+            <param name="imgFormat">图片格式，默认为Gif</param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetCodeBitmapSource(System.String,ZZJCore.SuanFa.Code128.Encode,System.Drawing.Font)">
+            <summary>
+            获取条形码BitmapSource
+            </summary>
+            <param name="pText">待转换的条码</param>
+            <param name="pCode">编译类型</param>
+            <param name="font">字体,默认20号宋体</param>
+            <returns>BitmapSource</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetValue(ZZJCore.SuanFa.Code128.Encode,System.String,System.Int32@)">
+            <summary>
+            获取目标对应的数据
+            </summary>
+            <param name="pCode">编码</param>
+            <param name="pValue">数值 A b  30</param>
+            <param name="pSetID">返回编号</param>
+            <returns>编码</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetValue(System.Int32)">
+            <summary>
+            根据编号获得条纹
+            </summary>
+            <param name="pCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetImage(System.String)">
+            <summary>
+            获得条码图形
+            </summary>
+            <param name="pText">文字</param>
+            <returns>图形</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Code128.GetViewText(System.Drawing.Bitmap,System.String)">
+            <summary>
+            显示可见条码文字 如果小于40 不显示文字
+            </summary>
+            <param name="pBitmap">图形</param>
+            <param name="pViewText"></param>           
+        </member>
+        <member name="P:ZZJCore.SuanFa.Code128.Height">
+            <summary>
+            条形码高度
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SuanFa.Code128.ValueFont">
+            <summary>
+            是否显示可见号码  如果为NULL不显示号码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SuanFa.Code128.Magnify">
+            <summary>
+            放大倍数
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.Code128.Encode">
+            <summary>
+            条码类别
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Code128.Encode.Code128A">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Code128.Encode.Code128B">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Code128.Encode.Code128C">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Code128.Encode.Ean128">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputInt64(ZZJCore.InputForm.InputParameter,System.UInt64@)">
+            <summary>
+            
+            </summary>
+            <param name="IP"></param>
+            <param name="Ret"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputHospitalIzationID(ZZJCore.InputForm.InputHospitalIzationIDParameter,System.String@)">
+            <summary>
+            输入住院号
+            </summary>
+            <param name="IP"></param>
+            <param name="HospitalIzationID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputHospitalIzationID(ZZJCore.InputForm.InputHospitalIzationIDParameter)">
+            <summary>
+            输入住院号
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputPhone(ZZJCore.InputForm.InputPhoneParameter,System.String@)">
+            <summary>
+            输入手机号
+            </summary>
+            <param name="IP"></param>
+            <param name="Mobile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputPhone(ZZJCore.InputForm.InputPhoneParameter)">
+            <summary>
+            输入手机号
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputAmount(ZZJCore.InputForm.InputAmountParameter,System.Decimal@)">
+            <summary>
+            输入金额
+            </summary>
+            <param name="IP"></param>
+            <param name="JE"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputIDNO(ZZJCore.InputForm.InputInputIDNOParameter)">
+            <summary>
+            输入身份证号
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputIDNO(ZZJCore.InputForm.InputInputIDNOParameter,System.String@)">
+            <summary>
+            输入身份证号2
+            </summary>
+            <param name="IP"></param>
+            <param name="IDNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputPassword(ZZJCore.InputForm.InputPasswordParameter)">
+            <summary>
+            输入密码
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.InputForm.#ctor(ZZJCore.InputForm.InputParameter)">
+            <summary>
+            基本输入界面
+            </summary>
+            <param name="IP"></param>
+        </member>
+        <member name="F:ZZJCore.InputForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.InputForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.label1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.label2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.ModuleNameLabel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.Button_YES">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.ButtX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.numberPad1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.Number">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputParameter">
+            <summary>
+            基本输入界面的参数配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.MAX">
+            <summary>
+            最大长度
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.MIN">
+            <summary>
+            最小长度
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.XButton">
+            <summary>
+            X按钮
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.NextVoice">
+            <summary>
+            是否播放"请按确定继续"语音
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputParameter.PassChar">
+            <summary>
+            密码遮掩符号
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputAmountParameter">
+            <summary>
+            输入充值金额的参数配置
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputAmountParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputPhoneParameter">
+            <summary>
+            输入电话号码的配置
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputPhoneParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputInputIDNOParameter">
+            <summary>
+            输入身份证号的配置
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputInputIDNOParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputPasswordParameter">
+            <summary>
+            输入密码的配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputPasswordParameter.Caption2">
+            <summary>
+            第二次输入的提示语句
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputPasswordParameter.NoTheSame">
+            <summary>
+            输入错误的提示语
+            </summary>
+        </member>
+        <member name="F:ZZJCore.InputForm.InputPasswordParameter.RegMode">
+            <summary>
+            注册模式
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputPasswordParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.InputForm.InputHospitalIzationIDParameter">
+            <summary>
+            输入住院号的配置
+            </summary>
+        </member>
+        <member name="M:ZZJCore.InputForm.InputHospitalIzationIDParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.LanguageCore">
+            <summary>
+            语言核心
+            </summary>
+        </member>
+        <member name="M:ZZJCore.LanguageCore.GetString(System.Int32)">
+            <summary>
+            获取字串
+            </summary>
+            <param name="StringCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DataGridViewForm2">
+            <summary>
+            表格界面2
+            </summary>
+            <summary>
+            表格界面2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataGridViewForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataGridViewForm2.BtnEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.#ctor(ZZJCore.ZZJStruct.ZZJButton[],System.String,System.Byte[],System.String[],System.String[0:,0:],System.Boolean,System.Int32,System.Int32,System.Int32,ZZJCore.DataGridViewForm.ButtonEvent[],System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="Buttons"></param>
+            <param name="LabelText"></param>
+            <param name="Ss"></param>
+            <param name="CNs"></param>
+            <param name="RDs"></param>
+            <param name="ONS"></param>
+            <param name="SearchNo"></param>
+            <param name="FSize"></param>
+            <param name="PSize"></param>
+            <param name="BE"></param>
+            <param name="BT"></param>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.ShowForm(ZZJCore.ZZJStruct.ZZJButton[],System.String,System.Byte[],System.String[],System.String[0:,0:],System.Boolean,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            不带按钮列表
+            </summary>
+            <param name="FaceButt"></param>
+            <param name="LableText"></param>
+            <param name="Sizes"></param>
+            <param name="ColumnsNames"></param>
+            <param name="RowDatas"></param>
+            <param name="ONSelect"></param>
+            <param name="SearchNo"></param>
+            <param name="FontSize"></param>
+            <param name="PageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.ShowForm(ZZJCore.ZZJStruct.ZZJButton[],System.String,System.Byte[],System.String[],System.String[0:,0:],ZZJCore.DataGridViewForm.ButtonEvent[],System.String[],System.Boolean,System.Boolean)">
+            <summary>
+            多选带按钮列表
+            </summary>
+            <param name="FaceButt"></param>
+            <param name="LableText"></param>
+            <param name="Sizes"></param>
+            <param name="ColumnsNames"></param>
+            <param name="RowDatas"></param>
+            <param name="BE"></param>
+            <param name="ButtonText"></param>
+            <param name="MultiSelect"></param>
+            <param name="ONSelect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm2.ShowForm(ZZJCore.ZZJStruct.ZZJButton[],System.String,System.Byte[],System.String[],System.String[0:,0:],System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,ZZJCore.DataGridViewForm.ButtonEvent[],System.String[])">
+            <summary>
+            全套
+            </summary>
+            <param name="FaceButt"></param>
+            <param name="LableText"></param>
+            <param name="Sizes"></param>
+            <param name="ColumnsNames"></param>
+            <param name="RowDatas"></param>
+            <param name="ONSelect"></param>
+            <param name="MultiSelect"></param>
+            <param name="SearchNo"></param>
+            <param name="FontSize"></param>
+            <param name="PageSize"></param>
+            <param name="BE"></param>
+            <param name="BTT"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DataGridViewForm2.ButtonEvent">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="ButtonIndex"></param>
+            <param name="SelectIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.XJSFForm2">
+            <summary>
+            现金收费
+            </summary>
+            <summary>
+            现金收费界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.ZBQInitial">
+            <summary>
+            纸币器初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.UnInitial">
+            <summary>
+            反初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.#ctor(ZZJCore.XJSFForm2.XJSFFormParameter)">
+            <summary>
+            构建界面
+            </summary>
+            <param name="__XJSFFormParameter"></param>
+        </member>
+        <member name="F:ZZJCore.XJSFForm2.FastZBQ">
+            <summary>
+            是否已经打开了纸币器标志
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm2.ShowForm(ZZJCore.XJSFForm2.XJSFFormParameter,System.Decimal@)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="_XJSFFormParameter">参数类</param>
+            <param name="JE">收入金额</param>
+            <returns>返回: 0:确认 -1:返回 -2:关闭</returns>
+        </member>
+        <member name="T:ZZJCore.XJSFForm2.XJSFFormParameter">
+            <summary>
+            参数结构
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm2.XJSFFormParameter.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm2.XJSFFormParameter.TS3">
+            <summary>
+            第三行提示文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm2.XJSFFormParameter.DJSUse">
+            <summary>
+            是否使用倒计时(测试)
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ShowDoctForm">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowDoctForm.#ctor(System.Xml.XmlNode,System.Drawing.Image)">
+            <summary>
+            
+            </summary>
+            <param name="XML"></param>
+            <param name="pic"></param>
+        </member>
+        <member name="M:ZZJCore.ShowDoctForm.ShowForm(System.Xml.XmlNode,System.Drawing.Image)">
+            <summary>
+            
+            </summary>
+            <param name="XML"></param>
+            <param name="pic"></param>
+            <returns></returns>
+        </member>
+        <member name="F:ZZJCore.ShowDoctForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowDoctForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.ShowDoctForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ZZJCore.PatientInfo">
+            <summary>
+            账户信息
+            </summary>
+        </member>
+        <member name="M:ZZJCore.PatientInfo.InitialPatientInfo">
+            <summary>
+            初始化置空
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.HospitalIzationID">
+            <summary>
+            住院号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.PatientName">
+            <summary>
+            患者姓名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.DOB">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.IDTypeCode">
+            <summary>
+            证件类型 代码
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.IDNo">
+            <summary>
+            证件号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.DepositAmount">
+            <summary>
+            院内预交金余额
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.PIC">
+            <summary>
+            照片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.ParentName">
+            <summary>
+            家属姓名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.ParentIDNo">
+            <summary>
+            家属身份证号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.PatientInfo.ParentRelationship">
+            <summary>
+            监护人关系,父亲?母亲?其他?
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.PatientID">
+            <summary>
+            患者ID 登记号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.SexCode">
+            <summary>
+            性别代码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.MRID">
+            <summary>
+            病案号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.Nation">
+            <summary>
+            民族
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.Address">
+            <summary>
+            家庭住址
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.TelephoneNo">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.IDType">
+            <summary>
+            证件描述
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.PatType">
+            <summary>
+            患者类型描述
+            </summary>
+        </member>
+        <member name="P:ZZJCore.PatientInfo.AccountID">
+            <summary>
+            院内账户ID
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.WCFInvoke">
+            <summary>
+            动态调用WCF
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WCFInvoke.CreateWCFService``1(System.String)">
+            <summary>
+            创建服务
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="URL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WCFInvoke.InvokeWCF(System.String,System.String,System.Object[])">
+            <summary>
+            调用服务
+            </summary>
+            <param name="URL"></param>
+            <param name="ProcName"></param>
+            <param name="Parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SuanFa.WCFInvoke.WcfInvokeFactory">
+            <summary>
+            服务工厂
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WCFInvoke.WcfInvokeFactory.CreateServiceByUrl``1(System.String)">
+            <summary>
+            构建服务
+            </summary>
+            <typeparam name="T">接口</typeparam>
+            <param name="url">地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WCFInvoke.WcfInvokeFactory.CreateServiceByUrl``1(System.String,System.String)">
+            <summary>
+            构建服务
+            </summary>
+            <typeparam name="T">接口</typeparam>
+            <param name="url">地址</param>
+            <param name="bing">协议</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WCFInvoke.WcfInvokeFactory.CreateBinding(System.String)">
+            <summary>
+            创建传输协议
+            </summary>
+            <param name="binding">传输协议名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.KeyBoardForm">
+            <summary>
+            键盘
+            </summary>
+        </member>
+        <member name="F:ZZJCore.KeyBoardForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.KeyBoardForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.KeyBoardForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.KeyBoardForm.TextTemp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.KeyBoardForm.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="X"></param>
+            <param name="Y"></param>
+            <param name="TEXT"></param>
+        </member>
+        <member name="M:ZZJCore.KeyBoardForm.#ctor(System.Int32,System.Int32,System.String,ZZJCore.KeyBoardForm.KeyChange)">
+            <summary>
+            
+            </summary>
+            <param name="X"></param>
+            <param name="Y"></param>
+            <param name="TEXT"></param>
+            <param name="KeyEventProc"></param>
+        </member>
+        <member name="E:ZZJCore.KeyBoardForm.KeyEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.KeyBoardForm.KeyChange">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="Text"></param>
+        </member>
+        <member name="T:ZZJCore.DataGridViewForm">
+            <summary>
+            表格界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataGridViewForm.BtnEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataGridViewForm.iRet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm.ShowForm(System.String,System.Byte[],System.String[],System.String[0:,0:],System.Boolean,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            不带按钮列表
+            </summary>
+            <param name="LableText"></param>
+            <param name="Sizes"></param>
+            <param name="ColumnsNames"></param>
+            <param name="RowDatas"></param>
+            <param name="ONSelect"></param>
+            <param name="SearchNo"></param>
+            <param name="FontSize"></param>
+            <param name="PageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm.ShowForm(System.String,System.Byte[],System.String[],System.String[0:,0:],ZZJCore.DataGridViewForm.ButtonEvent[],System.String[],System.Boolean,System.Boolean)">
+            <summary>
+            多选带按钮列表
+            </summary>
+            <param name="LableText"></param>
+            <param name="Sizes"></param>
+            <param name="ColumnsNames"></param>
+            <param name="RowDatas"></param>
+            <param name="BE"></param>
+            <param name="ButtonText"></param>
+            <param name="MultiSelect"></param>
+            <param name="ONSelect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.DataGridViewForm.ShowForm(System.String,System.Byte[],System.String[],System.String[0:,0:],System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,ZZJCore.DataGridViewForm.ButtonEvent[],System.String[])">
+            <summary>
+            全套
+            </summary>
+            <param name="LableText">标题文本</param>
+            <param name="Sizes">列宽数组</param>
+            <param name="ColumnsNames">列名数组</param>
+            <param name="RowDatas">数据内容</param>
+            <param name="ONSelect">是否可选</param>
+            <param name="MultiSelect">是否可多选(尚未支持)</param>
+            <param name="SearchNo">搜索列(为0表示不可搜索)</param>
+            <param name="FontSize">字体大小</param>
+            <param name="PageSize">每页行数</param>
+            <param name="BE">按钮事件数组</param>
+            <param name="BTT">按钮名称数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DataGridViewForm.ButtonEvent">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="ButtonIndex"></param>
+            <param name="SelectIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.BackForm">
+            <summary>
+            背景界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.BackForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.BackForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.BackForm.Button_Close">
+            <summary>
+            关闭按钮
+            </summary>
+        </member>
+        <member name="F:ZZJCore.BackForm.BF">
+            <summary>
+            界面本体
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm.#ctor">
+            <summary>
+            背景界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm.ShowForm(ZZJCore.BackForm.BackFormParameter)">
+            <summary>
+            显示一个界面
+            </summary>
+            <param name="_BackFormParameter"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.ShowForm2(ZZJCore.BackForm.BackFormParameter)">
+            <summary>
+            显示界面2
+            </summary>
+            <param name="_BackFormParameter"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.ShowForm(System.String,System.Boolean,System.String)">
+            <summary>
+            显示界面2
+            </summary>
+            <param name="Text"></param>
+            <param name="Dialog"></param>
+            <param name="DialogBtnText"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.CloseForm">
+            <summary>
+            关闭界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm.SetFormText(System.String)">
+            <summary>
+            设置界面文本
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.SetText(System.String)">
+            <summary>
+            设置文本
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.BtnExit(System.Boolean,System.String)">
+            <summary>
+            首页按钮
+            </summary>
+            <param name="v"></param>
+            <param name="DialogBtnText"></param>
+        </member>
+        <member name="M:ZZJCore.BackForm.TYForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            界面装载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:ZZJCore.BackForm.BackFormParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.BackForm.BackFormParameter.Dialog">
+            <summary>
+            模式化
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ShowControlForm">
+            <summary>
+            展示控件界面
+            </summary>
+            <summary>
+            显示一个控件
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ShowControlForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ShowControlForm._SCFP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.#ctor(ZZJCore.ShowControlForm.ShowControlFormPatameter)">
+            <summary>
+            显示界面
+            </summary>
+            <param name="SCFP"></param>
+        </member>
+        <member name="F:ZZJCore.ShowControlForm.SCF">
+            <summary>
+            界面实例
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.ShowForm(ZZJCore.ShowControlForm.ShowControlFormPatameter)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="_ShowControlFormPatameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.CloseForm">
+            <summary>
+            关闭窗口
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowControlForm.ReDisp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ShowControlForm.ShowControlFormPatameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ShowControlForm.ShowControlFormPatameter.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ShowControlForm.ShowControlFormPatameter.ControlTemp">
+            <summary>
+            控件
+            </summary>
+        </member>
+        <member name="E:ZZJCore.ShowControlForm.ShowControlFormPatameter.FormMsg">
+            <summary>
+            事件句柄
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.InvokeAPI">
+            <summary>
+            动态调用API
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.LoadLibrary(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.GetProcAddress(System.IntPtr,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="lib"></param>
+            <param name="funcName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.FreeLibrary(System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="lib"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="DLLPath"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.InvokeAPI.Invoke(System.String,System.Type)">
+            <summary>
+            将要执行的函数转换为委托
+            </summary>
+            <param name="APIName"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SubWindow.DateLabal">
+            <summary>
+            日期标签
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.DateLabal.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DateLabal.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DateLabal.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DateLabal.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.DateLabal.DispDate">
+            <summary>
+            控件上显示的日期
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.DateLabal.ShowChangeButt">
+            <summary>
+            修改按钮
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.DateLabal.Font">
+            <summary>
+            字体
+            </summary>
+        </member>
+        <member name="T:ZZJCore.API.User32">
+            <summary>
+            API来源
+            </summary>
+        </member>
+        <member name="M:ZZJCore.API.User32.SetTimer(System.IntPtr,System.IntPtr,System.UInt32,ZZJCore.API.User32.TimerProc)">
+            <summary>
+            设置倒计时
+            </summary>
+            <param name="hWnd"></param>
+            <param name="nIDEvent"></param>
+            <param name="uElapse"></param>
+            <param name="lpTimerFunc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.API.User32.KillTimer(System.IntPtr,System.IntPtr)">
+            <summary>
+            停止计时
+            </summary>
+            <param name="hWnd"></param>
+            <param name="uIDEvent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.API.User32.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            置前
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.API.User32.TimerProc">
+            <summary>
+            倒计时触发
+            </summary>
+            <param name="hWnd"></param>
+            <param name="uMsg"></param>
+            <param name="nIDEvent"></param>
+            <param name="dwTime"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.UDPage">
+            <summary>
+            翻页控件
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.UDPage.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.UDPage.ReDisp(ZZJCore.SubWindow.SelectWindow)">
+            <summary>
+            刷新
+            </summary>
+            <param name="SW"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.UDPage.ReDisp(System.Int32,System.Int32)">
+            <summary>
+            刷新
+            </summary>
+            <param name="PageID"></param>
+            <param name="PageCount"></param>
+        </member>
+        <member name="F:ZZJCore.SubWindow.UDPage.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.UDPage.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.UDPage.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.UDPage.SetGetPage">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.UDPage.EventS">
+            <summary>
+            事件
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.UDPage.GetPage">
+            <summary>
+            页码
+            </summary>
+            <param name="PageChange"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SubWindow.UDPage.EventShow">
+            <summary>
+            事件(用于重置界面倒计时)
+            </summary>
+            <param name="Msg"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ShouXie">
+            <summary>
+            手写
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.ShouXie.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.ShouXie.m_nPtNum">
+            <summary>
+            笔画数量
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.ShouXie.DrawTime">
+            <summary>
+            输入时间
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.SelectChar(System.Char)">
+            <summary>
+            选字
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.Initial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.ShouXie.EventS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.ShouXie.OutChar">
+            <summary>
+            输出一个字符
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.ShouXie.OutCharArray">
+            <summary>
+            输出一组字符
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ShouXie.EventShow">
+            <summary>
+            
+            </summary>
+            <param name="Msg"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ShouXie._OutChar">
+            <summary>
+            输出一个字符
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ShouXie._OutCharArray">
+            <summary>
+            输出一组字符
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ShouXie.SWAP">
+            <summary>
+            数据交换结构
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.SWAP.initial">
+            <summary>
+            初始化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ShouXie.SWAP.GetReturn(System.Drawing.Point[][])">
+            <summary>
+            解析
+            </summary>
+            <param name="sData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SubWindow.SelectWindow">
+            <summary>
+            选择界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.SelectWindow.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.SelectWindow.VD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.Math">
+            <summary>
+            统计数据
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.ShowPage">
+            <summary>
+            显示指定页
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SelectWindow.GSPage(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Page"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.PageSize">
+            <summary>
+            设置一页显示多少个项目
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.LineSize">
+            <summary>
+            设置一行显示多少个项目
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.LineCount">
+            <summary>
+            设置一页能显示多少行
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.VDistance">
+            <summary>
+            垂直间距
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.HDistance">
+            <summary>
+            水平间距
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.ContentAlignment">
+            <summary>
+            对齐方式
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.EndLineAlignment">
+            <summary>
+            尾行对齐方式
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.PageID">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.PageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.SelectWindow.Item">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.RegexHelper">
+            <summary>
+            正则表达式
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.RegexHelper.IsMatch(System.String,System.String)">
+            <summary>
+            验证输入字符串是否与模式字符串匹配，匹配返回true
+            </summary>
+            <param name="input">输入字符串</param>
+            <param name="pattern">模式字符串</param>        
+        </member>
+        <member name="M:ZZJCore.SuanFa.RegexHelper.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+            <summary>
+            验证输入字符串是否与模式字符串匹配，匹配返回true
+            </summary>
+            <param name="input">输入的字符串</param>
+            <param name="pattern">模式字符串</param>
+            <param name="options">筛选条件</param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.PinYinConverter">
+            <summary>
+            汉字拼音转换类
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.PinYinConverter.otherChinese">
+            <summary>
+            二级汉字数组
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.PinYinConverter.otherPinYin">
+            <summary>
+            二级汉字对应拼音数组
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.GetFirst(System.Char)">
+            <summary>
+            取拼音第一个字段
+            </summary>        
+            <param name="ch"></param>        
+            <returns></returns>        
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.GetFirst(System.String)">
+            <summary>
+            取拼音第一个字段
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.Get(System.Char)">
+            <summary>
+            获取单字拼音
+            </summary>
+            <param name="ch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.Get(System.String)">
+            <summary>
+            把汉字转换成拼音(全拼)
+            </summary>
+            <param name="str">汉字字符串</param>
+            <returns>转换后的拼音(全拼)字符串</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.PinYinSearch(System.String,System.String)">
+            <summary>
+            拼音搜索
+            </summary>
+            <param name="String"></param>
+            <param name="PinYin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.PinYinSearch(System.String[],System.String)">
+            <summary>
+            拼音搜索
+            </summary>
+            <param name="Strings"></param>
+            <param name="PinYin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PinYinConverter.GetGB2312">
+            <summary>
+            获取GB2312字符集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.ShowMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            置顶
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.ShowForm(System.String,System.String,System.Boolean,System.Windows.Forms.Form)">
+            <summary>
+            显示
+            </summary>
+            <param name="Msg1">日志</param>
+            <param name="Msg2">文本</param>
+            <param name="Err">错误</param>
+            <param name="FORM">底界面</param>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.#ctor(System.String,System.Boolean,System.Boolean,System.Int32,System.Drawing.Image)">
+            <summary>
+            显示消息
+            </summary>
+            <param name="Message">消息内容</param>
+            <param name="Err">是否显示错误标志</param>
+            <param name="CloseButton">关闭按钮</param>
+            <param name="Time">倒计时(为0则不显示)</param>
+            <param name="IMAGE">图片</param>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.SetText(System.String)">
+            <summary>
+            设置文本
+            </summary>
+            <param name="MsgText"></param>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.CloseMessage">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ShowMessage.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.ShowMessage.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SelectForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SelectForm.#ctor(System.String[],System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IS"></param>
+            <param name="TS"></param>
+            <param name="RetButt"></param>
+            <param name="CloseButton"></param>
+        </member>
+        <member name="M:ZZJCore.SelectForm.#ctor(System.Drawing.Image[],System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IS"></param>
+            <param name="TS"></param>
+            <param name="RetButt"></param>
+            <param name="CloseButton"></param>
+        </member>
+        <member name="M:ZZJCore.SelectForm.ShowForm(System.String[],System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="NameArray"></param>
+            <param name="Caption"></param>
+            <param name="RetButt"></param>
+            <param name="CloseButton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SelectForm.ShowForm(System.Drawing.Image[],System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="NameArray"></param>
+            <param name="Caption"></param>
+            <param name="RetButt"></param>
+            <param name="CloseButton"></param>
+            <returns></returns>
+        </member>
+        <member name="F:ZZJCore.SelectForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SelectForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.SelectForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ZZJCore.DoubleBufferDataGridView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DoubleBufferDataGridView.DoubleBufferedDataGirdView(System.Windows.Forms.DataGridView,System.Boolean)">
+            <summary>
+            双缓冲，解决闪烁问题
+            </summary>
+            <param name="dgv"></param>
+            <param name="flag"></param>
+        </member>
+        <member name="T:ZZJCore.DoubleBufferListView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DoubleBufferListView.DoubleBufferedListView(System.Windows.Forms.ListView,System.Boolean)">
+            <summary>
+            双缓冲，解决闪烁问题
+            </summary>
+            <param name="lv"></param>
+            <param name="flag"></param>
+        </member>
+        <member name="T:ZZJCore.BackForm2">
+            <summary>
+            背景界面2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.BackForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.BackForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.BackForm2.NewTYForm(ZZJCore.BackForm.BackFormParameter)">
+            <summary>
+            构建一个界面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.BackForm2.ShowForm(ZZJCore.BackForm.BackFormParameter)">
+            <summary>
+            显示界面
+            </summary>
+            <param name="BP">参数配置</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.BackForm2.#ctor(ZZJCore.BackForm.BackFormParameter)">
+            <summary>
+            背景界面
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJControl">
+            <summary>
+            ZZJCore的内部控件集
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJControl.Button_Close">
+            <summary>
+            引用通用关闭按钮(该按钮是全局的,请不要修改属性)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJControl.Button_Ret">
+            <summary>
+            引用通用返回按钮(该按钮是全局的,请不要修改属性)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJControl.Button_OK">
+            <summary>
+            引用通用确认按钮(该按钮是全局的,请不要修改属性)
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ZZJControl.Initial">
+            <summary>
+            初始化通用按钮
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ZZJControl.NewButton_Close">
+            <summary>
+            新建一个关闭按钮(能改属性)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ZZJControl.NewButton_Ret">
+            <summary>
+            新建一个返回按钮(能改属性)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ZZJControl.NewButton_OK">
+            <summary>
+            新建一个确认按钮(能改属性)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SuanFa.OpenLine">
+            <summary>
+            把字符串分行
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.OpenLine.TextHeight">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.OpenLine.StringLine">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.OpenLine.OpenLines(System.String,System.Drawing.Font,System.Int32)">
+            <summary>
+            把字符串分行
+            </summary>
+            <param name="S">字符串全文</param>
+            <param name="F">字体</param>
+            <param name="LineWidth">每行宽度</param>
+        </member>
+        <member name="T:ZZJCore.ExChineseInput">
+            <summary>
+            扩展的中文输入界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ExChineseInput.ShowForm(System.String,System.String@,System.Boolean)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="Caption"></param>
+            <param name="S"></param>
+            <param name="NoNull"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ExChineseInput.ShowForm2(System.String,System.String@,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Caption"></param>
+            <param name="S"></param>
+            <param name="NoNull"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DataViewForm">
+            <summary>
+            数据表格
+            </summary>
+            <summary>
+            数据表格显示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DataViewForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.DataViewForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.btn">
+            <summary>
+            表格上的按钮
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DataViewForm.#ctor(ZZJCore.DataViewForm.DataViewFormParameter)">
+            <summary>
+            
+            </summary>
+            <param name="sDataViewFormParameter"></param>
+        </member>
+        <member name="M:ZZJCore.DataViewForm.ShowForm(ZZJCore.DataViewForm.DataViewFormParameter)">
+            <summary>
+            显示界面
+            </summary>
+            <param name="sDataViewFormParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.DataViewForm.HideAllButton">
+            <summary>
+            隐藏表格上的所有按钮
+            </summary>
+        </member>
+        <member name="T:ZZJCore.DataViewForm.ButtonEvent">
+            <summary>
+            按钮事件
+            </summary>
+            <param name="sender">按钮对象</param>
+            <param name="ButtonIndex">按钮序号</param>
+            <param name="SelectIndex">行</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DataViewForm.DataViewFormParameter">
+            <summary>
+            入参
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.ButtonText">
+            <summary>
+            按钮列(列名和在这里面出现的列,将变成按钮)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.BtnEvent">
+            <summary>
+            按钮事件(废弃)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.ButtEvent">
+            <summary>
+            按钮事件
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.ColumnsNames">
+            <summary>
+            列名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.RowDatas">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.Sizes">
+            <summary>
+            列宽数组
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.PageSize">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.KBF">
+            <summary>
+            小键盘
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.FontSize">
+            <summary>
+            字体大小
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.DataViewFormParameter.Version">
+            <summary>
+            版本(1:标准界面,2:按钮支持XML控制)
+            </summary>
+        </member>
+        <member name="T:ZZJCore.DataViewForm.ButtTag">
+            <summary>
+            按钮自带Tag
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.ButtTag.Row">
+            <summary>
+            所在行(每次换页都会刷)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.ButtTag.Con">
+            <summary>
+            所在列
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DataViewForm.ButtTag.ButtID">
+            <summary>
+            按钮ID
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.Doct">
+            <summary>
+            医生卡信息结构体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.PIC">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.LineSpacing">
+            <summary>
+            行间距
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.Data1">
+            <summary>
+            //列表左边数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.Data2">
+            <summary>
+            列表右边数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.ExData">
+            <summary>
+            扩展数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.GHbuttString">
+            <summary>
+            挂号按钮上的字
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.GHButt">
+            <summary>
+            按钮是否显示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.Doct.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.DoctEx">
+            <summary>
+            医生卡信息结构体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.PIC">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.PICWindow">
+            <summary>
+            图片位置大小
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.Datas">
+            <summary>
+            扩展数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.ExDatas">
+            <summary>
+            扩展数据(无效)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.GHbuttString">
+            <summary>
+            挂号按钮上的字
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.GHButt">
+            <summary>
+            按钮是否显示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DoctEx.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.YYDoct">
+            <summary>
+            预约表格数据结构体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoct.AM">
+            <summary>
+            上午
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoct.AME">
+            <summary>
+            上午按钮是否可按
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoct.PM">
+            <summary>
+            下午
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoct.PME">
+            <summary>
+            下午按钮是否可按
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.YYDoctEx">
+            <summary>
+            预约表格,单个医生排班
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoctEx.AM">
+            <summary>
+            上午
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoctEx.AME">
+            <summary>
+            上午按钮是否可按
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoctEx.PM">
+            <summary>
+            下午
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoctEx.PME">
+            <summary>
+            下午按钮是否可按
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.YYDoctEx.Tag">
+            <summary>
+            扩展数据
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.FontText">
+            <summary>
+            字串与字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.PIC">
+            <summary>
+            背景图
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.TextFont">
+            <summary>
+            字体(有默认值)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.FontColor">
+            <summary>
+            字色(有默认值)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.X">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.Y">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.W">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.H">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.FontText.Text">
+            <summary>
+            文本内容
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.ZZJButton">
+            <summary>
+            用于ZZJCore界面的按钮
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.BGIMAGE">
+            <summary>
+            背景图
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.TextFont">
+            <summary>
+            字体(有默认值)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.TextColor">
+            <summary>
+            字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.Rect">
+            <summary>
+            矩形位置大小
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.RetData">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.ZZJButton.ClickEvent">
+            <summary>
+            点击事件(不建议使用)
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.DataLine">
+            <summary>
+            一行文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DataLine.LeftText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DataLine.RightText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DataLine.LeftFont">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.DataLine.RightFont">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ZZJStruct.DataLine.#ctor(System.String,System.String,System.Drawing.Font,System.Drawing.Font)">
+            <summary>
+            
+            </summary>
+            <param name="LT"></param>
+            <param name="RT"></param>
+            <param name="LF"></param>
+            <param name="RF"></param>
+        </member>
+        <member name="T:ZZJCore.ZZJStruct.AImage">
+            <summary>
+            在界面放一张图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.AImage.X">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.AImage.Y">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.AImage.W">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.AImage.H">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJStruct.AImage.image">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.PYKeyBoard">
+            <summary>
+            拼音键盘
+            </summary>
+            <summary>
+            拼音输入键盘
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.PYKeyBoard.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.Initial">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.SelectChar(System.Char)">
+            <summary>
+            选中一个字符
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.Clear">
+            <summary>
+            清除
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.PYKeyBoard.UD_Click(System.Object,System.EventArgs)">
+            <summary>
+            切换大小写
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:ZZJCore.SubWindow.PYKeyBoard.EventS">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.PYKeyBoard.OutChar">
+            <summary>
+            输出一个字符
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.PYKeyBoard.OutCharArray">
+            <summary>
+            输出一组字符
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.PYKeyBoard.EventShow">
+            <summary>
+            事件(用于倒计时)
+            </summary>
+            <param name="Msg"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.PYKeyBoard._OutChar">
+            <summary>
+            输出一个字符
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.PYKeyBoard._OutCharArray">
+            <summary>
+            输出一组字符
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="T:ZZJCore.CNInputForm">
+            <summary>
+            中文输入
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CNInputForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.CNInputForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CNInputForm.CharClick(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.CNInputForm.ShowForm(System.String,System.String@,System.Boolean)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="Caption"></param>
+            <param name="Data"></param>
+            <param name="NoNull"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.CNInputForm.#ctor(System.String,System.Boolean)">
+            <summary>
+            实例化
+            </summary>
+            <param name="Caption">标题</param>
+            <param name="NoNull">不允许为空</param>
+        </member>
+        <member name="T:ZZJCore.DateSelect">
+            <summary>
+            日期选择
+            </summary>
+            <summary>
+            日期选择样式1
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DateSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.DateSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DateSelect.#ctor(ZZJCore.DateSelect.DateSelectParameter)">
+            <summary>
+            
+            </summary>
+            <param name="_DateSelectParameter"></param>
+        </member>
+        <member name="M:ZZJCore.DateSelect.ShowForm(ZZJCore.DateSelect.DateSelectParameter,System.DateTime@)">
+            <summary>
+            选择日期
+            </summary>
+            <param name="_DateSelectParameter"></param>
+            <param name="DT"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DateSelect.DateSelectParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect.DateSelectParameter.CaptionString">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect.DateSelectParameter.defDT">
+            <summary>
+            默认日期
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect.DateSelectParameter.StartDT">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect.DateSelectParameter.EndDT">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.YYTableEx">
+            <summary>
+            预约表格扩展
+            </summary>
+            <summary>
+            单个预约表格
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.YYTableEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.ShowTable(ZZJCore.ZZJStruct.YYDoctEx)">
+            <summary>
+            显示数据
+            </summary>
+            <param name="DC"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.EventAdd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.pictureBox1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.YYTableEx.SelectYS(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:ZZJCore.SubWindow.YYTableEx.OKClick">
+            <summary>
+            按钮单机事件
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.YYTableEx.OK_Click">
+            <summary>
+            按钮单机事件
+            </summary>
+        </member>
+        <member name="T:ZZJCore.YesNoForm">
+            <summary>
+            确认界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.YesNoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.YesNoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.LB1">
+            <summary>
+            列表1,列表2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.LB2">
+            <summary>
+            列表1,列表2
+            </summary>
+        </member>
+        <member name="M:ZZJCore.YesNoForm.#ctor(ZZJCore.YesNoForm.YesNoFormParameter)">
+            <summary>
+            构建一个界面
+            </summary>
+            <param name="YNFP"></param>
+        </member>
+        <member name="M:ZZJCore.YesNoForm.YesNoForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            界面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.YesNoForm.ShowForm(ZZJCore.YesNoForm.YesNoFormParameter)">
+            <summary>
+            显示一个界面
+            </summary>
+            <param name="YNFP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.YesNoForm.YesNoFormParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.Caption">
+            <summary>
+            标题文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.Lab1">
+            <summary>
+            标签1
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.Lab2">
+            <summary>
+            标签2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.PIC">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.LB1ForeColor">
+            <summary>
+            标签1颜色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.LB2ForeColor">
+            <summary>
+            标签2颜色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.LB1Font">
+            <summary>
+            标签1字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.YesNoForm.YesNoFormParameter.LB2Font">
+            <summary>
+            标签2字体
+            </summary>
+        </member>
+        <member name="T:ZZJCore.WebWindows">
+            <summary>
+            网页界面
+            </summary>
+            <summary>
+            网页界面
+            </summary>
+        </member>
+        <member name="F:ZZJCore.WebWindows.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.WebWindows.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.WebWindows.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.WebWindows.webBrowser1">
+            <summary>
+            控件
+            </summary>
+        </member>
+        <member name="M:ZZJCore.WebWindows.#ctor(ZZJCore.WebWindows.WebWindowsParameter)">
+            <summary>
+            构造
+            </summary>
+            <param name="WWP"></param>
+        </member>
+        <member name="T:ZZJCore.WebWindows.WebWindowsParameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.WebWindows.WebWindowsParameter.URL">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="F:ZZJCore.WebWindows.WebWindowsParameter.HTML">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="T:ZZJCore.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:ZZJCore.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:ZZJCore.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.ControlPage">
+            <summary>
+            多页控件
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ControlPage.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ControlPage.ControlPage_Resize(System.Object,System.EventArgs)">
+            <summary>
+            重定义界面组大小
+            </summary>
+            <param name="obj"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ControlPage.Pages(System.Int32)">
+            <summary>
+            获取一个界面
+            </summary>
+            <param name="Page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SubWindow.ControlPage.AddPage">
+            <summary>
+            增加界面
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SelectFormEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SelectFormEx.ShowForm(ZZJCore.SelectFormEx.SelectControlParameter)">
+            <summary>
+            
+            </summary>
+            <param name="SCP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SelectFormEx.Control_OKClick(System.Windows.Forms.Control)">
+            <summary>
+            
+            </summary>
+            <param name="DC"></param>
+        </member>
+        <member name="T:ZZJCore.SelectFormEx.SelectControlParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ShowDeptForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowDeptForm.ShowForm(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="DeptName"></param>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ShowDeptForm.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="DeptName"></param>
+            <param name="DeptText"></param>
+        </member>
+        <member name="F:ZZJCore.ShowDeptForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ShowDeptForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.ShowDeptForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.MultiPageLabel">
+            <summary>
+            多页标签
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.MultiPageLabel.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MultiPageLabel.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MultiPageLabel.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MultiPageLabel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MultiPageLabel.ReSort">
+            <summary>
+            重新排序
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MultiPageLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MultiPageLabel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MultiPageLabel.PageCount">
+            <summary>
+            页数
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MultiPageLabel.PageRowsCount">
+            <summary>
+            单页行数
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MultiPageLabel.Text">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MultiPageLabel.LineSpacing">
+            <summary>
+            行间距
+            </summary>
+        </member>
+        <member name="T:ZZJCore.Initial">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.Initial.CoreInitial">
+            <summary>
+            核心初始化
+            </summary>
+        </member>
+        <member name="M:ZZJCore.Initial.Read(System.String)">
+            <summary>
+            读取配置文件
+            </summary>
+            <param name="MKConfigPath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.ImageMessage">
+            <summary>
+            图片展示界面
+            </summary>
+            <summary>
+            图像消息
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ImageMessage.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ImageMessage.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.ImageMessage.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ImageMessage.NewImageMessage(ZZJCore.ImageMessage.ImageMessageParameter)">
+            <summary>
+            初始化一个界面
+            </summary>
+            <param name="IMP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ImageMessage.#ctor(ZZJCore.ZZJStruct.AImage[],ZZJCore.ZZJStruct.ZZJButton[],System.String,System.Int32)">
+            <summary>
+            实例化一个界面
+            </summary>
+            <param name="ImageArray"></param>
+            <param name="ButtonArray"></param>
+            <param name="YuYin"></param>
+            <param name="DJS"></param>
+        </member>
+        <member name="T:ZZJCore.ImageMessage.ImageMessageParameter">
+            <summary>
+            界面参数
+            </summary>
+        </member>
+        <member name="T:ZZJCore.CoreString">
+            <summary>
+            ZZJCore内部一些字符串设定
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CoreString.Initial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CoreString.PrintPTDataTimeFormat">
+            <summary>
+            打印凭条的日期时间格式
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.Proc">
+            <summary>
+            功能函数库
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.MB_ICONASTERISK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.MB_ICONEXCLAMATION">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.MB_ICONHAND">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.MB_ICONINFORMATION">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.MB_OK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.SND_FILENAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.SND_ASYNC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.Int32,System.String)">
+            <summary>
+            读取INI文件
+            </summary>
+            <param name="section">项目名称</param>
+            <param name="key">键</param>
+            <param name="def">缺省值</param>
+            <param name="retVal">读取数值</param>
+            <param name="size">大小</param>
+            <param name="filePath">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ReadIniData(System.String,System.String,System.String,System.String,System.Int32@)">
+            <summary>
+            读取INI文件
+            </summary>
+            <param name="Section"></param>
+            <param name="Key"></param>
+            <param name="NoText"></param>
+            <param name="iniFilePath"></param>
+            <param name="iRet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MessageBeep(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="wType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Beep(System.Int32,System.Int32)">
+            <summary>
+            驱动蜂鸣器
+            </summary>
+            <param name="freq">频率</param>
+            <param name="duration">时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.PlaySound(System.String,System.Int32,System.Int32)">
+            <summary>
+            播放声音
+            </summary>
+            <param name="pszSound"></param>
+            <param name="hmod"></param>
+            <param name="fdwSound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.FindWindow(System.String,System.String)">
+            <summary>
+            获取窗体句柄
+            </summary>
+            <param name="lpClassName"></param>
+            <param name="lpWindowName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MoveWindow(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            设置目标窗体大小，位置
+            </summary>
+            <param name="hWnd">目标句柄</param>
+            <param name="x">目标窗体新位置X轴坐标</param>
+            <param name="y">目标窗体新位置Y轴坐标</param>
+            <param name="nWidth">目标窗体新宽度</param>
+            <param name="nHeight">目标窗体新高度</param>
+            <param name="BRePaint">是否刷新窗体</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SetParent(System.IntPtr,System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="hWndChild"></param>
+            <param name="hWndParent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetWindowRect(System.IntPtr,ZZJCore.SuanFa.Proc.Rect@)">
+            <summary>
+            获取窗口区域矩形
+            </summary>
+            <param name="hwnd"></param>
+            <param name="lpRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetClientRect(System.IntPtr,ZZJCore.SuanFa.Proc.Rect@)">
+            <summary>
+            获得客户区矩形
+            </summary>
+            <param name="hWnd"></param>
+            <param name="lpRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            设置指定窗体为活动窗体
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.WriteProcessMemory(System.Int32,System.Int32@,System.Byte*,System.Int32,System.IntPtr)">
+            <summary>
+            写进程内存
+            </summary>
+            <param name="hProcess"></param>
+            <param name="lpBaseAddress"></param>
+            <param name="lpBuffer"></param>
+            <param name="nSize"></param>
+            <param name="lpNumberOfBytesWritten"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ZZJMessageBox(System.String,System.String,System.Boolean)">
+            <summary>
+            弹出消息框
+            </summary>
+            <param name="Msg1">日志</param>
+            <param name="Msg2">内容和语音</param>
+            <param name="Err">是否报错</param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ShowString(System.Object)">
+            <summary>
+            其实就是MessageBox.Show
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.HookMessageBoxA">
+            <summary>
+            无效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetControl``1(System.Windows.Forms.Control[])">
+            <summary>
+            在控件数组寻找指定类型的控件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="controls"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetControls``1(System.Windows.Forms.Control[])">
+            <summary>
+            在控件数组寻找指定类型的控件数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="controls"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ResetImageSize(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary> 
+            返回此 Image 对象的缩略图
+            </summary>
+            <param name="AtImage">要缩放的图象对象</param>
+            <param name="ImageWidth">指定新的图象宽度</param>
+            <param name="ImageHeight">指定新的图象高度</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.IDNoGetSex(System.String)">
+            <summary>
+            从身份证里提取性别,1为男 2为女
+            </summary>
+            <param name="IDNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.CheckIDCard(System.String)">
+            <summary>
+            确认身份证号是否有效
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.IDNoGetDOB(System.String)">
+            <summary>
+            根据身份证号获取出生日期
+            </summary>
+            <param name="IDNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetMaskIDNo(System.String)">
+            <summary>
+            获取遮掩的身份证号
+            </summary>
+            <param name="IDNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ToBool(System.Int32)">
+            <summary>
+            任意类型转Bool
+            </summary>
+            <param name="L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ToBool(System.String)">
+            <summary>
+            任意类型转Bool
+            </summary>
+            <param name="L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ToInt(System.String)">
+            <summary>
+            字符串转Int(支持16进制,8进制,2进制)
+            </summary>
+            <param name="S"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ToColor(System.String)">
+            <summary>
+            字符串中的颜色值转Color
+            </summary>
+            <param name="S"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.LoadText(System.String)">
+            <summary>
+            读文本文件
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.WriteText(System.String,System.String)">
+            <summary>
+            写文本文件
+            </summary>
+            <param name="Path"></param>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.YS(System.Byte[])">
+            <summary>
+            压缩
+            </summary>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.UnYS(System.Byte[])">
+            <summary>
+            解压
+            </summary>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetAssemblyPath">
+            <summary>
+            获取模块自身路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MD5(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="D"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MD5(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="D"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.CoreLog(System.String)">
+            <summary>
+            ZZJCore自己用的日志记录
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Log(System.String)">
+            <summary>
+            把一行文本保存到日志
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.BW(System.String,System.String)">
+            <summary>
+            保存报文
+            </summary>
+            <param name="Data"></param>
+            <param name="InterfaceName"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Log(System.Exception)">
+            <summary>
+            保存异常记录
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Serialize(System.Object)">
+            <summary>
+            将对象序列化
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Deserialize(System.Byte[])">
+            <summary>
+            将对象反序列化
+            </summary>
+            <param name="buffer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.IsDesignMode">
+            <summary>
+            判断窗口是否在IDE设计模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.IsDesignMode2">
+            <summary>
+            判断窗口是否在IDE设计模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.LockWindowUpdate(System.IntPtr)">
+            <summary>
+            锁定窗体刷新
+            </summary>
+            <param name="hWndLock"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="hWnd"></param>
+            <param name="Msg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SendMessage(System.IntPtr,System.Int32,System.Int32,System.String)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="hWnd">句柄</param>
+            <param name="Msg">ID</param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.PostMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="hWnd"></param>
+            <param name="Msg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.BackPaint(System.IntPtr)">
+            <summary>
+            强行刷新后台界面
+            </summary>
+            <param name="Handle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.CloseMonitor(System.Windows.Forms.Form)">
+            <summary>
+            关闭显示器
+            </summary>
+            <param name="F"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.OpenMonitor(System.Windows.Forms.Form)">
+            <summary>
+            打开显示器
+            </summary>
+            <param name="F"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.GetTextSizeF(System.Drawing.Font,System.String)">
+            <summary>
+            获取字符串打印占用空间
+            </summary>
+            <param name="F">字体</param>
+            <param name="Text">文本内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ReadPublicINI(System.String,System.String)">
+            <summary>
+            读取Core.ini
+            </summary>
+            <param name="Key">键值(调试模式会读Debug节点的,正式运行会读Release节点的)</param>
+            <param name="NoText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.JsonToXml(System.String)">
+            <summary>
+            JSON转XML
+            </summary>
+            <param name="Json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="hWnd"></param>
+            <param name="Msg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MsgSend(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <param name="Post"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MsgSend(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MsgPost(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.MsgSend(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.IsBindEvent(System.Type,System.Windows.Forms.Control,System.Reflection.MethodInfo)">
+            <summary>
+            检测一个控件的事件是否绑定了处理函数
+            </summary>
+            <param name="type"></param>
+            <param name="con"></param>
+            <param name="eventName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.SaveTicket(System.Drawing.Image)">
+            <summary>
+            备份凭条
+            </summary>
+            <param name="image"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.ClearAllEvents(System.Object,System.String)">
+            <summary>
+            清除一个对象绑定的所有事件处理方法
+            </summary>
+            <param name="objectHasEvents"></param>
+            <param name="eventName"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.sleep(System.Int64)">
+            <summary>
+            延时同时释放界面
+            </summary>
+            <param name="Time"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.RunEXE(System.String,System.String,System.Boolean)">
+            <summary>
+            执行外部EXE
+            </summary>
+            <param name="FileName">文件名</param>
+            <param name="Argv">参数</param>
+            <param name="Blocking">堵塞</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.strlen(System.String)">
+            <summary>
+            取字符串长度
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.AllToString(System.Object)">
+            <summary>
+            把一个对象所有属性提取到字符串
+            </summary>
+            <param name="Obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.HTMLGetImage(System.String)">
+            <summary>
+            把网页提取为图片
+            </summary>
+            <param name="URL">网址</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.HTMLGetImage2(System.String,System.Double)">
+            <summary>
+            网页转图片
+            </summary>
+            <param name="HTML">HTML代码</param>
+            <param name="Zoom">缩放级别(1.0为标准)</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Proc.Convert24bppTo1bpp(System.Drawing.Bitmap)">
+            <summary>
+            图片二值化
+            </summary>
+            <param name="SrcImg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SuanFa.Proc.Rect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.Rect.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.Rect.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.Rect.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.Proc.Rect.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.TABSelectForm">
+            <summary>
+            挂号用,科室选择
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.tabControl1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.GetWindowLong(System.IntPtr,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.SetWindowLong(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            设置窗口属性
+            </summary>
+            <param name="hwnd"></param>
+            <param name="nIndex"></param>
+            <param name="dwNewLong"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.SetLayeredWindowAttributes(System.IntPtr,System.Int32,System.Byte,System.Int32)">
+            <summary>
+            设置多层窗口属性?
+            </summary>
+            <param name="Handle"></param>
+            <param name="crKey"></param>
+            <param name="bAlpha"></param>
+            <param name="dwFlags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.#ctor(ZZJCore.TABSelectForm.ShowParameter)">
+            <summary>
+            构造
+            </summary>
+            <param name="_ShowParameter"></param>
+        </member>
+        <member name="M:ZZJCore.TABSelectForm.ShowForm(ZZJCore.TABSelectForm.ShowParameter@)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="SP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.TABSelectForm.ShowParameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.TabNames">
+            <summary>
+            大分页名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.Datas">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.VDistance">
+            <summary>
+            横竖间距
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.HDistance">
+            <summary>
+            横竖间距
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.pindex">
+            <summary>
+            默认页
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.ButtonWidth">
+            <summary>
+            按钮宽度
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.ButtonHeight">
+            <summary>
+            按钮高度
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.ButtonImage">
+            <summary>
+            按钮图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.ButtonFontColor">
+            <summary>
+            按钮字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.TABSelectForm.ShowParameter.ButtonFont">
+            <summary>
+            按钮字体
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.DoctCardTemplate">
+            <summary>
+            医生卡模版
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.DoctCardTemplate.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCardTemplate.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCardTemplate.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCardTemplate.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCardTemplate.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCardTemplate.ButtonOK_Click(ZZJCore.SubWindow.DoctCardTemplate)">
+            <summary>
+            
+            </summary>
+            <param name="DCT"></param>
+        </member>
+        <member name="E:ZZJCore.SubWindow.DoctCardTemplate.OKClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.DoctCardTemplate.OK_Click">
+            <summary>
+            
+            </summary>
+            <param name="DC"></param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.DBType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBType.SQLLite">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBType.Access">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBType.MySQL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBType.SQLServer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.DBParameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.DBType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.DBAddress">
+            <summary>
+            数据库地址
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.DBName">
+            <summary>
+            数据库名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.Port">
+            <summary>
+            数据库端口(0表示默认端口)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.DBParameter.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.DBCore">
+            <summary>
+            数据库核心
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.DBCore.#ctor(ZZJCore.SuanFa.DBParameter,System.Boolean)">
+            <summary>
+            构建
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.DBCore.IsOpen">
+            <summary>
+            判断数据库是否连接
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.DBCore.DBOpen">
+            <summary>
+            打开数据库
+            </summary>
+            <returns>返回值 -1:入参无效 -2:不支持该数据库类型</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.DBCore.DBClose">
+            <summary>
+            关闭数据库
+            </summary>
+            <returns>返回值 -1:入参无效 -2:不支持该数据库类型</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.DBCore.SqlCommand(System.String)">
+            <summary>
+            执行SQL指令
+            </summary>
+            <param name="SQLCMD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.GetSFZ">
+            <summary>
+            刷身份证界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.GetSFZ.NewGetSFZ(ZZJCore.GetSFZ.GetSFZParameter)">
+            <summary>
+            实例化一个界面
+            </summary>
+            <param name="GP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.GetSFZ.ShowForm(ZZJCore.GetSFZ.GetSFZParameter)">
+            <summary>
+            刷身份证
+            </summary>
+            <param name="GP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.GetSFZ.GetSFZParameter">
+            <summary>
+            界面参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.CaptionText">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.CaptionText2">
+            <summary>
+            手工输入模式身份证号输入界面的文本提示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.NeedName">
+            <summary>
+            需要名字
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.NoInput">
+            <summary>
+            禁止手工输入
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.UseSXEx">
+            <summary>
+            使用手写扩展
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.InputNameParameter">
+            <summary>
+            输入姓名界面配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.GetSFZ.GetSFZParameter.InputIDNoParameter">
+            <summary>
+            输入身份证号界面配置
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.POSTInvoke">
+            <summary>
+            POST方式调用HTTP
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.POSTInvoke.Invoke(System.String,System.String)">
+            <summary>
+            调用
+            </summary>
+            <param name="URL"></param>
+            <param name="PostData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.POSTInvoke.ConvertXml(System.String)">
+            <summary>
+            XML转义字符处理
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.POSTInvoke.JsonToXml(System.String)">
+            <summary>
+            JSON转XML
+            </summary>
+            <param name="Json"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SubWindow.EasyDoctCard">
+            <summary>
+            简易医生卡
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.EasyDoctCard.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.EasyDoctCard.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.EasyDoctCard.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.EasyDoctCard.SetDoct(ZZJCore.ZZJStruct.Doct)">
+            <summary>
+            
+            </summary>
+            <param name="D"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.EasyDoctCard.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.EasyDoctCard.OKClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.EasyDoctCard.ShowMode">
+            <summary>
+            界面布局
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.EasyDoctCard.OK_Click">
+            <summary>
+            
+            </summary>
+            <param name="DC"></param>
+        </member>
+        <member name="T:ZZJCore.CNInputForm2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm2.SubZK">
+            <summary>
+            可选字表
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm2.SelectChar">
+            <summary>
+            选字控件
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm2.SeePage">
+            <summary>
+            当前正在看的页数
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.CharClick(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.ShowForm(ZZJCore.CNInputForm2.CNInputFormParameter,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="CNIFP"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.#ctor(ZZJCore.CNInputForm2.CNInputFormParameter)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ZZJCore.CNInputForm2.CNInputFormParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.CNInputForm2.CNInputFormParameter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CNInputForm2.CNInputFormParameter.NoNull">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ZZJConfig">
+            <summary>
+            配置信息
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.YQCode">
+            <summary>
+            院区代码
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.YQGUID">
+            <summary>
+            院区GUID
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.MJ_Port">
+            <summary>
+            门禁端口号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.QRCode_Port">
+            <summary>
+            二维码端口号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.GHJFFS">
+            <summary>
+            挂号缴费方式?
+            </summary>
+        </member>
+        <member name="F:ZZJCore.ZZJConfig.ZLBZ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.ExtUserID">
+            <summary>
+            操作员代码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.TerminalID">
+            <summary>
+            自助终端编号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.HospitalId">
+            <summary>
+            医院唯一编号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.SecrityNo">
+            <summary>
+            卡校验码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.Device">
+            <summary>
+            设备类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.Port">
+            <summary>
+            端口号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.LigthBL">
+            <summary>
+            病历打印控制灯路数
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.BL_Printer">
+            <summary>
+            病历本
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.BL_Port">
+            <summary>
+            病历端口
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.PT_Port">
+            <summary>
+            凭条端口
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.MJ_Dev">
+            <summary>
+            门禁类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.QRCode_Dev">
+            <summary>
+            二维码设备
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.PT_Light">
+            <summary>
+            凭条指示灯
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.SFZ_Dev">
+            <summary>
+            二代证阅读器类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.ZBQ_Dev">
+            <summary>
+            纸币器类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.ZBQ_Port">
+            <summary>
+            纸币器端口
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.HYD_Dev">
+            <summary>
+            化验单类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.YBQ_Dev">
+            <summary>
+            硬币器类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.YBQ_Port">
+            <summary>
+            硬币器端口
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.ZBQ_ZSD">
+            <summary>
+            纸币器指示灯
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.FKQ_Dev">
+            <summary>
+            发卡器类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.FKQ_Port">
+            <summary>
+            发卡器读写模块端口号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.FKQ_Light">
+            <summary>
+            发卡器指示灯路数
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.PT_Dev">
+            <summary>
+            凭条类型名称
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DwMc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DKQ_Dev">
+            <summary>
+            读卡器类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DKQ_Port">
+            <summary>
+            读卡器端口号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.PasswordKey_Dev">
+            <summary>
+            密码键盘类型
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.PasswordKey_Port">
+            <summary>
+            密码键盘端口号
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.YHCode">
+            <summary>
+            所属银行代码
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.YHMC">
+            <summary>
+            所属银行名称
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_1">
+            <summary>
+            1元 0不接收 1接收
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_5">
+            <summary>
+            5元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_10">
+            <summary>
+            10元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_20">
+            <summary>
+            20元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_50">
+            <summary>
+            50元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_ZB_100">
+            <summary>
+            100元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_YB_01">
+            <summary>
+            0.1元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_YB_05">
+            <summary>
+            0.5元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.XJYC_YB_1">
+            <summary>
+            1元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_1">
+            <summary>
+            1元 0不接收 1接收
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_5">
+            <summary>
+            5元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_10">
+            <summary>
+            10元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_20">
+            <summary>
+            20元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_50">
+            <summary>
+            50元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_ZB_100">
+            <summary>
+            100元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_YB_01">
+            <summary>
+            0.1元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_YB_05">
+            <summary>
+            0.5元
+            </summary>
+        </member>
+        <member name="P:ZZJCore.ZZJConfig.DRGH_YB_1">
+            <summary>
+            1元
+            </summary>
+        </member>
+        <member name="T:ZZJCore.XJSFForm">
+            <summary>
+            现金收费1(已经废除请勿使用)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.XJSFForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.XJSFForm.#ctor(ZZJCore.XJSFForm.XJSFFormParameter)">
+            <summary>
+            现金收费界面
+            </summary>
+            <param name="XJSFP"></param>
+        </member>
+        <member name="M:ZZJCore.XJSFForm.ShowForm(ZZJCore.XJSFForm.XJSFFormParameter,System.Decimal@)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="_XJSFFormParameter"></param>
+            <param name="JE"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.XJSFForm.initial(System.Boolean)">
+            <summary>
+            初始化界面
+            </summary>
+            <param name="ZB"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.XJSFForm.XJSFFormParameter">
+            <summary>
+            参数结构
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm.XJSFFormParameter.ZB">
+            <summary>
+            是否支持纸币
+            </summary>
+        </member>
+        <member name="F:ZZJCore.XJSFForm.XJSFFormParameter.Caption">
+            <summary>
+            标题文本
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.Image2BitmapImage">
+            <summary>
+            Winform中的图片格式转WPF中的图片格式
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Image2BitmapImage.ChangeBitmapToImageSource(System.Drawing.Bitmap)">
+            <summary>
+            从bitmap转换成ImageSource
+            </summary>
+            <param name="bitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.Image2BitmapImage.ChangeImageToImageSource(System.Drawing.Image)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.Select2in1">
+            <summary>
+            二选一界面
+            </summary>
+        </member>
+        <member name="M:ZZJCore.Select2in1.ShowForm(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="CaptionT"></param>
+            <param name="Button1"></param>
+            <param name="Button2"></param>
+            <param name="ExText1"></param>
+            <param name="ExText2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.Select2in1.ShowForm(System.String,System.Drawing.Image,System.Drawing.Image,System.String,System.String)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="CaptionT"></param>
+            <param name="Button1"></param>
+            <param name="Button2"></param>
+            <param name="ExText1"></param>
+            <param name="ExText2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.Select2in1.NewForm(ZZJCore.Select2in1.Select2in1Parameter)">
+            <summary>
+            实例化一个界面
+            </summary>
+            <param name="S21P"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.Select2in1.ShowForm(ZZJCore.Select2in1.Select2in1Parameter)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="S21P"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.Select2in1.Select2in1Parameter">
+            <summary>
+            界面参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.Button1Image">
+            <summary>
+            为图片模式时,按钮1的图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.Button2Image">
+            <summary>
+            为图片模式时,按钮2的图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.Text1">
+            <summary>
+            为文本模式时,按钮1的文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.Text2">
+            <summary>
+            为文本模式时,按钮2的文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.ExText1">
+            <summary>
+            扩展标题1
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.ExText2">
+            <summary>
+            扩展标题2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Select2in1.Select2in1Parameter.Mode">
+            <summary>
+            模式选择 0:文本 1:图片
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.DoctCard">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCard.SetDoct(ZZJCore.ZZJStruct.DoctEx)">
+            <summary>
+            
+            </summary>
+            <param name="D"></param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCard.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SubWindow.DoctCard.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCard.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ZZJCore.SubWindow.DoctCard.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.DoctCard.ShowMode">
+            <summary>
+            布局
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.RSA">
+            <summary>
+            RSA加密解密
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.RSA.GenerateKeys">
+            <summary>
+            generate private key and public key arr[0] for private key arr[1] for public key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.RSA.EncryptString(System.String,System.String)">
+            <summary>
+            RSA Encrypt
+            </summary>
+            <param name="sSource" >Source string</param>
+            <param name="sPublicKey" >public key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.RSA.DecryptString(System.String,System.String)">
+            <summary>
+            RSA Decrypt
+            </summary>
+            <param name="sSource">Source string</param>
+            <param name="sPrivateKey">Private Key</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SelectForm2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SelectForm2.ShowForm(ZZJCore.SelectForm2.SelectFormParameter)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="SF"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SelectForm2.SelectFormParameter">
+            <summary>
+            参数配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.Images">
+            <summary>
+            图片数组
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.ButtonTexts">
+            <summary>
+            文本数组
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.Caption">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.TextButtonWidth">
+            <summary>
+            文本按钮宽度(只在文本模式启用)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.TextButtonHeight">
+            <summary>
+            文本按钮高度(只在文本模式启用)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectForm2.SelectFormParameter.TextButtonFont">
+            <summary>
+            文本框字体(只在文本模式启用)
+            </summary>
+        </member>
+        <member name="T:ZZJCore.CardInfo">
+            <summary>
+            卡信息
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CardInfo.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CardInfo.SecrityNo">
+            <summary>
+            效验码[废弃不用]
+            </summary>
+        </member>
+        <member name="F:ZZJCore.CardInfo.CardType">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="T:ZZJCore.Public_Var">
+            <summary>
+            一些公共属性
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.Camera_App">
+            <summary>
+            摄像头进程名称
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.Camera_CaptureFile">
+            <summary>
+            摄像头配置文件路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.bwPath">
+            <summary>
+            报文路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.bwSave">
+            <summary>
+            是否保存报文
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.debug">
+            <summary>
+            是否在调试模式下运行
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.LogPath">
+            <summary>
+            日志路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.MainFrmHandleIntptr">
+            <summary>
+            主界面句柄
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.MsgID">
+            <summary>
+            主界面消息ID
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.LocalDataPath">
+            <summary>
+            本地数据库路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.TicketPath">
+            <summary>
+            凭条备份路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SerialNumber">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.IsVoice">
+            <summary>
+            是否使用语音(请勿设置)
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.hopper_devType">
+            <summary>
+            找零器设备类型
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.coinAcceptor_devType">
+            <summary>
+            投币器设备类型
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.ModuleName">
+            <summary>
+            模块名
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.ModulePath">
+            <summary>
+            模块自身路径
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.FormRun">
+            <summary>
+            界面打开标志
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.cardInfo">
+            <summary>
+            卡信息
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.ZZJ_Config">
+            <summary>
+            自助机配置
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.patientInfo">
+            <summary>
+            账户信息
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.CTK_CD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.CTK_SBMCD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SPK_SJK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SPK_SJSQ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SPK_SBHSJK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SPK_SBHSQ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SPK_Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.YY_Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.YKH_Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.XJ_Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.KPLX_Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.SFZ_Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.LanguageID">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="F:ZZJCore.Public_Var.ModuleRun">
+            <summary>
+            模块运行标志
+            </summary>
+        </member>
+        <member name="T:ZZJCore.LanguageID">
+            <summary>
+            语言ID枚举
+            </summary>
+        </member>
+        <member name="F:ZZJCore.LanguageID.CN">
+            <summary>
+            汉语
+            </summary>
+        </member>
+        <member name="F:ZZJCore.LanguageID.EN">
+            <summary>
+            英语
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SelectDoct">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SelectDoct.ShowForm(ZZJCore.SelectDoct.SelectDoctParameter)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="SDP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SelectDoct.SelectDoctParameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectDoct.SelectDoctParameter.Docts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SelectDoct.SelectDoctParameter.DoctExs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa._Vector.Export(System.String)">
+            <summary>
+            导出为 Emf 或 Wmf 文件
+            </summary>
+            <param name="filePath">文件路径</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa._Vector.Draw(System.Drawing.Graphics)">
+            <summary>
+            绘制图形
+            </summary>
+            <param name="g">用于绘图的Graphics对象</param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.YuanJiaoControl">
+            <summary>
+            圆角控件
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.YuanJiaoControl.SetWindowRegion(System.Windows.Forms.Control)">
+            <summary>
+            把控件变成圆角
+            </summary>
+            <param name="Form"></param>
+        </member>
+        <member name="T:ZZJCore.DateSelect2">
+            <summary>
+            日期时间选择
+            </summary>
+            <summary>
+            日期选择界面,样式2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DateSelect2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ZZJCore.DateSelect2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.Bit">
+            <summary>
+            当前输入位数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.DT">
+            <summary>
+            用户选择的日期
+            </summary>
+        </member>
+        <member name="M:ZZJCore.DateSelect2.#ctor(ZZJCore.DateSelect2.DateSelectParameter)">
+            <summary>
+            
+            </summary>
+            <param name="_DateSelectParameter"></param>
+        </member>
+        <member name="M:ZZJCore.DateSelect2.ShowForm(ZZJCore.DateSelect2.DateSelectParameter,System.DateTime@)">
+            <summary>
+            显示一次界面
+            </summary>
+            <param name="_DateSelectParameter"></param>
+            <param name="DT">日期时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.DateSelect2.DateSelectParameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.DateSelectParameter.CaptionString">
+            <summary>
+            标题文本
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.DateSelectParameter.defDT">
+            <summary>
+            默认日期
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.DateSelectParameter.StartDT">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="F:ZZJCore.DateSelect2.DateSelectParameter.EndDT">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.SuperTimer">
+            <summary>
+            自制Timer
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SuperTimer.#ctor">
+            <summary>
+            构建
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.SuperTimer.Finalize">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="E:ZZJCore.SubWindow.SuperTimer.Tick2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SubWindow.SuperTimer._Tick">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:ZZJCore.SubWindow.MaskTextBox">
+            <summary>
+            不可编辑的TextBox(其实是Label)
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MaskTextBox.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MaskTextBox.DelectButt">
+            <summary>
+            删除按钮
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SubWindow.MaskTextBox.DispText">
+            <summary>
+            显示文本
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MaskTextBox.Text">
+            <summary>
+            文本内容
+            </summary>
+        </member>
+        <member name="P:ZZJCore.SubWindow.MaskTextBox.PasswordChar">
+            <summary>
+            密码字符
+            </summary>
+        </member>
+        <member name="T:ZZJCore.FormSkin">
+            <summary>
+            主题皮肤
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TSForm">
+            <summary>
+            提示背景
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TYButtonImage">
+            <summary>
+            通用按钮背景图
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TYButtonImage2">
+            <summary>
+            通用按钮背景图2
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TYButtonImage3">
+            <summary>
+            通用按钮背景图3
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.DelButtonImage">
+            <summary>
+            删除按钮图像
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.BGImage">
+            <summary>
+            背景图
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.BGImageKey">
+            <summary>
+            键盘背景
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.BGImageSFZTS">
+            <summary>
+            身份证提示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.NOPIC">
+            <summary>
+            无身份证图片
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.ImageSFZTS">
+            <summary>
+            身份证提示
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.ThemeID">
+            <summary>
+            主题ID
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TYButtonFont">
+            <summary>
+            通用按钮字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.SelectButtonFont">
+            <summary>
+            选择按钮字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.DoctCardFont">
+            <summary>
+            医生卡字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.PTNRFont">
+            <summary>
+            凭条字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.PTBTFont">
+            <summary>
+            凭条标题字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.YYTableCaptionFont">
+            <summary>
+            预约表格标题字体
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.PTLinePen">
+            <summary>
+            用于画凭条的分割线
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.Form1Rect">
+            <summary>
+            窗口1位置大小
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.Caption1Color">
+            <summary>
+            标题1字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.Caption2Color">
+            <summary>
+            标题2字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.Caption3Color">
+            <summary>
+            标题3字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TYButtonTextColor">
+            <summary>
+            通用按钮1字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TY2ButtonTextColor">
+            <summary>
+            通用按钮2字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.TSColor">
+            <summary>
+            提示字色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.SelectButtonColor">
+            <summary>
+            选择按钮颜色
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.UseRetCard">
+            <summary>
+            是否使用退卡按钮
+            </summary>
+        </member>
+        <member name="F:ZZJCore.FormSkin.RetCardImage">
+            <summary>
+            退卡按钮的图片资源
+            </summary>
+        </member>
+        <member name="M:ZZJCore.FormSkin.SetSkin(System.Int32)">
+            <summary>
+            加载主题
+            </summary>
+            <param name="ThemeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.FormSkin.SetImage(System.Windows.Forms.Label,System.Drawing.Image,System.Drawing.Color)">
+            <summary>
+            给控件设置背景图
+            </summary>
+            <param name="L">Lable实例</param>
+            <param name="I">图片</param>
+            <param name="C">颜色</param>
+        </member>
+        <member name="M:ZZJCore.FormSkin.SetImage(System.Windows.Forms.Label,System.Drawing.Image)">
+            <summary>
+            给控件设置背景图
+            </summary>
+            <param name="l">Lable实例</param>
+            <param name="I">图片</param>
+        </member>
+        <member name="M:ZZJCore.FormSkin.SetImage(System.Windows.Forms.PictureBox,System.Drawing.Image)">
+            <summary>
+            给控件设置背景图
+            </summary>
+            <param name="PB"></param>
+            <param name="I"></param>
+        </member>
+        <member name="M:ZZJCore.FormSkin.SetImage(System.Windows.Forms.Button,System.Drawing.Image)">
+            <summary>
+            给控件设置背景图
+            </summary>
+            <param name="B">Button实例</param>
+            <param name="I">图片</param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.PrintCall">
+            <summary>
+            打印功能函数库
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.Print(System.String,System.Drawing.Printing.PrintPageEventHandler,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            打印
+            </summary>
+            <param name="PrinterName">打印机名</param>
+            <param name="PB">打印事件</param>
+            <param name="PWidth">纸张宽度</param>
+            <param name="PHeight">纸张高度</param>
+            <param name="Debug">调试标志</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.Print2(System.String,System.Drawing.Printing.PrintPageEventHandler,System.Int32,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            打印
+            </summary>
+            <param name="PrinterName">打印机名</param>
+            <param name="PB">打印事件</param>
+            <param name="PWidth">纸张宽度</param>
+            <param name="PHeight">纸张高度</param>
+            <param name="Debug">调试</param>
+            <param name="PaperID">纸盒ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.Print3(System.String,System.Drawing.Printing.PrintPageEventHandler,System.Int32,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            打印3(支持选择打印机纸盒)
+            </summary>
+            <param name="PrinterName">打印机</param>
+            <param name="PB">打印事件句柄</param>
+            <param name="PWidth">页面宽度</param>
+            <param name="PHeight">页面高度</param>
+            <param name="Debug">调试模式</param>
+            <param name="PaperID">纸盒ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.Print(System.String,System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            打印图片
+            </summary>
+            <param name="PrinterName">打印机名</param>
+            <param name="image">图像</param>
+            <param name="Debug">测试模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.Print2(System.String,System.Drawing.Bitmap,System.Boolean,System.Int32)">
+            <summary>
+            打印图片,支持切换纸盒
+            </summary>
+            <param name="PrinterName">打印机名</param>
+            <param name="image">图片</param>
+            <param name="Debug">调试标志</param>
+            <param name="PaperID">纸盒ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.PrintImage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            打印图片事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.PrintPT(System.String,System.String[],System.String[],System.String,System.Boolean,System.Boolean[])">
+            <summary>
+            打印凭条
+            </summary>
+            <param name="Caption">标题</param>
+            <param name="Lable1">内容1</param>
+            <param name="Lable2">内容2</param>
+            <param name="WXTS">温馨提示</param>
+            <param name="DebugFlag">预览(不打印)</param>
+            <param name="HideDefaultData">隐藏默认数据标志</param>
+            <returns>是否打印成功</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.PrintPT(System.String,ZZJCore.ZZJStruct.DataLine[],System.String,System.Boolean,System.Boolean[])">
+            <summary>
+            打印凭条
+            </summary>
+            <param name="Caption">抬头</param>
+            <param name="DataLine">数据数组</param>
+            <param name="WXTS">温馨提示</param>
+            <param name="DebugFlag">调试标志</param>
+            <param name="HideDefaultData">隐藏默认数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.GetPTImage(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Width"></param>
+            <param name="Height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.PrintCall.PrintEvent(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.PrintCall.PrintBegin">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:ZZJCore.SuanFa.WebServiceHelper">
+            <summary>
+            动态调用Webservice
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WebServiceHelper.Initial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WebServiceHelper.InvokeWebService(System.String,System.String,System.Object[])">
+            <summary>
+            动态调用web服务
+            </summary>
+            <param name="url">地址</param>
+            <param name="methodname">方法名</param>
+            <param name="args">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WebServiceHelper.GetServer(System.String,System.String)">
+            <summary>
+            获取一个服务
+            </summary>
+            <param name="URL">服务URL</param>
+            <param name="ClassName">类名(可为空)</param>
+            <returns>建立好的服务</returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WebServiceHelper.GetServer2(System.String,System.String)">
+            <summary>
+            获取服务
+            </summary>
+            <param name="URL">地址</param>
+            <param name="ClassName">类名</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.SuanFa.WebServiceHelper.InvokeWebService(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            调用方法
+            </summary>
+            <param name="url">地址</param>
+            <param name="classname">类名</param>
+            <param name="methodname">方法名</param>
+            <param name="args">参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:ZZJCore.SuanFa.WebServiceHelper.ServerMethod">
+            <summary>
+            反射方法
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.ServerMethod.Method">
+            <summary>
+            方法本身方法本身
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.ServerMethod.MethodName">
+            <summary>
+            方法名
+            </summary>
+        </member>
+        <member name="T:ZZJCore.SuanFa.WebServiceHelper.StaticServers">
+            <summary>
+            服务
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.StaticServers.Server">
+            <summary>
+            服务对象
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.StaticServers.URL">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.StaticServers.T">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:ZZJCore.SuanFa.WebServiceHelper.StaticServers.Methods">
+            <summary>
+            方法
+            </summary>
+        </member>
+        <member name="T:ZZJCore.ObjectEx">
+            <summary>
+            通用类扩展
+            </summary>
+        </member>
+        <member name="M:ZZJCore.ObjectEx.ToVol(System.String)">
+            <summary>
+            将字符串里的数值取出来
+            </summary>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZJCore.ObjectEx.ToiVol(System.String)">
+            <summary>
+            将字符串里的数值取出来
+            </summary>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
